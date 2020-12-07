@@ -1,8 +1,8 @@
 class Solution:
     def getSum(self, a: int, b: int) -> int:
         
-        MAX = 0x7FFFFFFF
-        mask = 0xFFFFFFFF
+        mask = 0b11111111111111111111111111111111
+        MAX =  0b01111111111111111111111111111111
         
         if b == 0:
             return a if a <= MAX else ~(a ^ mask)
@@ -10,4 +10,4 @@ class Solution:
         return self.getSum(
             (a ^ b) & mask,
             ((a & b) << 1) & mask
-        )
+        )
