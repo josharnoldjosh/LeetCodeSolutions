@@ -1,3 +1,4 @@
+[Discussion Post (created on 12/11/2020 at 11:19)](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/discuss/969865/Python-3-Solution-With-Clear-Comments)  
 <h2>103. Binary Tree Zigzag Level Order Traversal</h2><h3>Medium</h3><hr><div><p>Given a binary tree, return the <i>zigzag level order</i> traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between).</p>
 
 <p>
