@@ -1,3 +1,4 @@
+[Discussion Post (created on 14/11/2020 at 10:27)](https://leetcode.com/problems/stone-game-ii/discuss/972292/Python-DP-%2B-Explanation-and-Thought-Process)  
 <h2>1140. Stone Game II</h2><h3>Medium</h3><hr><div><p>Alice and Bob continue their&nbsp;games with piles of stones.&nbsp; There are a number of&nbsp;piles&nbsp;<strong>arranged in a row</strong>, and each pile has a positive integer number of stones&nbsp;<code>piles[i]</code>.&nbsp; The objective of the game is to end with the most&nbsp;stones.&nbsp;</p>
 
 <p>Alice&nbsp;and Bob take turns, with Alice starting first.&nbsp; Initially, <code>M = 1</code>.</p>
