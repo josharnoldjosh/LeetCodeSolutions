@@ -1,3 +1,4 @@
+[Discussion Post (created on 15/11/2020 at 11:11)](https://leetcode.com/problems/stone-game-iii/discuss/973587/Python-or-Straight-Forward-Easy-DP-or-AC)  
 <h2>1406. Stone Game III</h2><h3>Hard</h3><hr><div><p>Alice and Bob continue their&nbsp;games with piles of stones. There are several stones&nbsp;<strong>arranged in a row</strong>, and each stone has an associated&nbsp;value which is an integer given in the array&nbsp;<code>stoneValue</code>.</p>
 
 <p>Alice and Bob take turns, with <strong>Alice</strong> starting first. On each player's turn, that player&nbsp;can take <strong>1, 2 or 3 stones</strong>&nbsp;from&nbsp;the <strong>first</strong> remaining stones in the row.</p>
