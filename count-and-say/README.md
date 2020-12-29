@@ -1,3 +1,4 @@
+[Discussion Post (created on 29/11/2020 at 9:55)](https://leetcode.com/problems/count-and-say/discuss/992605/Python-AC-or-With-Comments)  
 <h2>38. Count and Say</h2><h3>Easy</h3><hr><div><p>The <strong>count-and-say</strong> sequence is a sequence of digit strings defined by the recursive formula:</p>
 
 <ul>
