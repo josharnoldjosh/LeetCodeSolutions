@@ -1,3 +1,4 @@
+[Discussion Post (created on 30/11/2020 at 10:1)](https://leetcode.com/problems/reverse-bits/discuss/994203/Three-Line-Python-AC)  
 <h2>190. Reverse Bits</h2><h3>Easy</h3><hr><div><p>Reverse bits of a given 32 bits unsigned integer.</p>
 
 <p><strong>Note:</strong></p>
