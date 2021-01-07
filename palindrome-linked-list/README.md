@@ -1,3 +1,4 @@
+[Discussion Post (created on 7/0/2021 at 9:33)](https://leetcode.com/problems/palindrome-linked-list/discuss/1006503/Python-O(n)-space-solution)  
 <h2>234. Palindrome Linked List</h2><h3>Easy</h3><hr><div><p>Given a singly linked list, determine if it is a palindrome.</p>
 
 <p><strong>Example 1:</strong></p>
