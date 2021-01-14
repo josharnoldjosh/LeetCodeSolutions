@@ -1,3 +1,4 @@
+[Discussion Post (created on 14/0/2021 at 9:38)](https://leetcode.com/problems/sum-of-all-odd-length-subarrays/discuss/1016805/Python-Prefix-Sum-Technique-(Much-Faster-than-brute-force))  
 <h2>1588. Sum of All Odd Length Subarrays</h2><h3>Easy</h3><hr><div><p>Given an array of positive integers&nbsp;<code>arr</code>, calculate the sum of all possible odd-length subarrays.</p>
 
 <p>A subarray is a contiguous&nbsp;subsequence of the array.</p>
