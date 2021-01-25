@@ -1,3 +1,4 @@
+[Discussion Post (created on 25/0/2021 at 9:50)](https://leetcode.com/problems/palindromic-substrings/discuss/1034932/Python-or-Expand-from-Center-or-Easy!)  
 <h2>647. Palindromic Substrings</h2><h3>Medium</h3><hr><div><p>Given a string, your task is to count how many palindromic substrings in this string.</p>
 
 <p>The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters.</p>
