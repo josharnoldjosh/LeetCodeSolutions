@@ -1,3 +1,4 @@
+[Discussion Post (created on 1/1/2021 at 8:35)](https://leetcode.com/problems/minimum-window-substring/submissions/)  
 <h2>76. Minimum Window Substring</h2><h3>Hard</h3><hr><div><p>Given two strings <code>s</code> and <code>t</code>, return <em>the minimum window in <code>s</code> which will contain all the characters in <code>t</code></em>. If there is no such window in <code>s</code> that covers all characters in <code>t</code>, return <em>the empty string <code>""</code></em>.</p>
 
 <p><strong>Note</strong> that If there is such a window, it is&nbsp;guaranteed that there will always be only one unique minimum window in <code>s</code>.</p>
