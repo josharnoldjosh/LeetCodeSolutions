@@ -1,34 +1,10 @@
+from collections import Counter
+
 class Solution:
     
     def numTriplets(self, nums1: List[int], nums2: List[int]) -> int:
-        """
-        O(n^2)
-        """
+        i_1, i_2 = Counter(i**2 for i in nums1), Counter(i**2 for i in nums2)
         
-        def check(nums1, nums2):
-            
-            # Initialize a dict: value->(value^2, count)
-            a = {}
-            for i in nums1:
-                if i not in a:
-                    a[i] = [i**2, 1]
-                else:
-                    a[i][-1] += 1
-                               
-            # Initialize a dict: nums2[i] * nums[j] -> count
-            b = collections.defaultdict(int)
-            for i in range(len(nums2)):
-                for j in range(i+1, len(nums2)):
-                    b[nums2[i]*nums2[j]] += 1
-                    
-            # Calculate the result
-            # result += i^2 count * j*k count for each combination
-            result = 0            
-            for (i, amount) in a.values():                
-                result += b[i]*amount
-            
-            return result
-        
-                                
-        # Call above function twice
-        return check(nums1, nums2) + check(nums2, nums1)
+        f = lambda i, nums: sum(i[nums[j]*nums[k]] for j in range(len(nums)) for k in range(j+1, len(nums)))
+         
+        return f(i_1, nums2) + f(i_2, nums1)
