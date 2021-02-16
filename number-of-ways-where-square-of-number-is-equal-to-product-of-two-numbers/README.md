@@ -1,3 +1,4 @@
+[Discussion Post (created on 16/1/2021 at 11:2)](https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/discuss/1068741/Python-O(n2)-function)  
 <h2>1577. Number of Ways Where Square of Number Is Equal to Product of Two Numbers</h2><h3>Medium</h3><hr><div><p>Given two arrays of integers&nbsp;<code>nums1</code> and <code>nums2</code>, return the number of triplets formed (type 1 and type 2) under the following rules:</p>
 
 <ul>
