@@ -1,8 +1,13 @@
 class Solution:
-    
-    @functools.lru_cache(maxsize=None)
-    def climbStairs(self, n: int) -> int:
-        if n == 0: return 1
-        if n < 0: return 0
-        return self.climbStairs(n-1) + self.climbStairs(n-2)
-        
+    def climbStairs(self, n: int) -> int:
+        
+        @functools.lru_cache(None)
+        def recurse(steps_left):
+            if steps_left < 0: return 0
+            if steps_left == 0: return 1
+            a = recurse(steps_left-1)
+            b = recurse(steps_left-2)
+            return a+b
+        
+        return recurse(n)
+            
