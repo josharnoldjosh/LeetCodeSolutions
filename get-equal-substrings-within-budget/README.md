@@ -1,3 +1,4 @@
+[Discussion Post (created on 26/1/2021 at 10:49)](https://leetcode.com/problems/get-equal-substrings-within-budget/discuss/1084087/Python-It-gets-the-job-done)  
 <h2>1208. Get Equal Substrings Within Budget</h2><h3>Medium</h3><hr><div><p>You are given two strings <code>s</code> and <code>t</code> of the same length. You want to change <code>s</code> to <code>t</code>. Changing the <code>i</code>-th character of <code>s</code> to <code>i</code>-th character of <code>t</code> costs <code>|s[i] - t[i]|</code> that is, the absolute difference between the ASCII values of the characters.</p>
 
 <p>You are also given an integer <code>maxCost</code>.</p>
