@@ -1,3 +1,4 @@
+[Discussion Post (created on 27/1/2021 at 8:56)](https://leetcode.com/problems/simplified-fractions/discuss/1085203/Python-Use-a-set-duh)  
 <h2>1447. Simplified Fractions</h2><h3>Medium</h3><hr><div><p>Given an integer <code>n</code>, return a list of all <strong>simplified</strong> fractions between 0 and 1 (exclusive) such that the denominator is less-than-or-equal-to <code>n</code>. The fractions can be in <strong>any</strong> order.</p>
 
 <p>&nbsp;</p>
