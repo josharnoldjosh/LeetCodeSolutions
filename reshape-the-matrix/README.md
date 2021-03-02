@@ -1,3 +1,4 @@
+[Discussion Post (created on 2/2/2021 at 8:30)](https://leetcode.com/problems/reshape-the-matrix/discuss/1090150/Python-Intuitive-Queue-Solution)  
 <h2>566. Reshape the Matrix</h2><h3>Easy</h3><hr><div><p>In MATLAB, there is a very useful function called 'reshape', which can reshape a matrix into a new one with different size but keep its original data.
 </p>
 
