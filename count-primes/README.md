@@ -1,3 +1,4 @@
+[Discussion Post (created on 5/2/2021 at 10:6)](https://leetcode.com/problems/count-primes/discuss/1095020/Python-mark-number-multiples-as-%22False%22-Intuitive-explanation)  
 <h2>204. Count Primes</h2><h3>Easy</h3><hr><div><p>Count the number of prime numbers less than a non-negative number, <code>n</code>.</p>
 
 <p>&nbsp;</p>
