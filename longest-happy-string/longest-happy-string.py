@@ -1,45 +1,59 @@
 class Solution:
-    
-    def longestDiverseString(self, a: int, b: int, c: int) -> str:                
+    def longestDiverseString(self, a: int, b: int, c: int) -> str:
         
-        result = ""        
+        heap = list(zip((-a, -b, -c), tuple("abc")))
+        heapq.heapify(heap)
         
-        heap = list(zip((-a,-b,-c), ('a','b','c')))
-        heapq.heapify(heap)                  
+        result = ""
         
-        prev_val = 0
-        prev_char = ''
+        prev_num, prev_char = 0, ''
         
-        while heap:
-                                      
-            v, k = heapq.heappop(heap)
+        while heap:            
             
-            if prev_val < 0:
-                heapq.heappush(heap, (prev_val, prev_char))
-                
-            if abs(v) >= 2 and abs(v) > abs(prev_val):
-                result += k*2
-                v += 2
-            elif abs(v) >= 1:
-                result += k
-                v += 1
+            num, char = heapq.heappop(heap)
+            
+            if abs(num) >= 2 and abs(num) > abs(prev_num):
+                result += char*2
+                num += 2
+            elif abs(num) >= 1:
+                result += char
+                num += 1
             else:
                 break
                 
-            prev_val = v
-            prev_char = k
+            if abs(prev_num) > 0:
+                heapq.heappush(heap, (prev_num, prev_char))
                 
-                                                                     
+            prev_num, prev_char = num, char
+            
+        
         return result
                 
             
-
         
         
+        
+    
+    
 """
 
-keep adding max until can't add max
+3, 3, 3
+
+aababbccc X
+
+1 1 1
+
+aabbccabc
+
+10, 2, 2
+
+aabaabaacaacaa
+
+if previous is greater than current...?
 
 
-ccaccbcc
+
+
+
 """
+        
