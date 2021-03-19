@@ -1,3 +1,4 @@
+[Discussion Post (created on 19/2/2021 at 14:56)](https://leetcode.com/problems/delete-operation-for-two-strings/discuss/1117731/Python-~7-8-lines-clean-code)  
 <h2>583. Delete Operation for Two Strings</h2><h3>Medium</h3><hr><div><p>Given two strings <code>word1</code> and <code>word2</code>, return <em>the minimum number of <strong>steps</strong> required to make</em> <code>word1</code> <em>and</em> <code>word2</code> <em>the same</em>.</p>
 
 <p>In one <strong>step</strong>, you can delete exactly one character in either string.</p>
