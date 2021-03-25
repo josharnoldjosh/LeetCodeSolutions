@@ -1,3 +1,4 @@
+[Discussion Post (created on 25/2/2021 at 11:54)](https://leetcode.com/problems/deepest-leaves-sum/discuss/1127323/Python-nothing-fancy-O(n)-space-and-time)  
 <h2>1302. Deepest Leaves Sum</h2><h3>Medium</h3><hr><div>Given the <code>root</code> of a binary tree, return <em>the sum of values of its deepest leaves</em>.
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
