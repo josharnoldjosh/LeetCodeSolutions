@@ -1,3 +1,4 @@
+[Discussion Post (created on 2/3/2021 at 7:20)](https://leetcode.com/problems/maximum-product-of-word-lengths/discuss/1138886/Python-and-operator)  
 <h2>318. Maximum Product of Word Lengths</h2><h3>Medium</h3><hr><div><p>Given a string array <code>words</code>, return <em>the maximum value of</em> <code>length(word[i]) * length(word[j])</code> <em>where the two words do not share common letters</em>. If no such two words exist, return <code>0</code>.</p>
 
 <p>&nbsp;</p>
