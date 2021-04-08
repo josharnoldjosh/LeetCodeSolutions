@@ -1,3 +1,4 @@
+[Discussion Post (created on 8/3/2021 at 9:5)](https://leetcode.com/problems/find-common-characters/submissions/)  
 <h2>1002. Find Common Characters</h2><h3>Easy</h3><hr><div><p>Given an array&nbsp;<code>A</code> of strings made only from lowercase letters, return a list of all characters that show up in all strings within the list <strong>(including duplicates)</strong>.&nbsp;&nbsp;For example, if a character occurs 3 times&nbsp;in all strings but not 4 times, you need to include that character three times&nbsp;in the final answer.</p>
 
 <p>You may return the answer in any order.</p>
