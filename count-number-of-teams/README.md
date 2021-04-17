@@ -1,3 +1,4 @@
+[Discussion Post (created on 17/3/2021 at 10:32)](https://leetcode.com/problems/count-number-of-teams/discuss/1163362/Clean-Python)  
 <h2>1395. Count Number of Teams</h2><h3>Medium</h3><hr><div><p>There are <code>n</code> soldiers standing in a line. Each soldier is assigned a <strong>unique</strong> <code>rating</code> value.</p>
 
 <p>You have to form a team of 3 soldiers amongst them under the following rules:</p>
