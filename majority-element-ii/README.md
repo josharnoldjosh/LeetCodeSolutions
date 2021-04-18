@@ -1,3 +1,4 @@
+[Discussion Post (created on 18/3/2021 at 10:0)](https://leetcode.com/problems/majority-element-ii/discuss/1165315/Linear-time-Linear-Space-Python)  
 <h2>229. Majority Element II</h2><h3>Medium</h3><hr><div><p>Given an integer array of size <code>n</code>, find all elements that appear more than <code>⌊ n/3 ⌋</code> times.</p>
 
 <p><strong>Follow-up: </strong>Could you solve the problem&nbsp;in linear time and in O(1) space?</p>
