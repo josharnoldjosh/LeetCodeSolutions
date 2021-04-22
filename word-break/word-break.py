@@ -1,55 +1,19 @@
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
         
-        global result
-        result = False
-        
-        
-        # Build a graph of "sorts"
-        graph = collections.defaultdict(set)
-        for word in wordDict:
-            graph[word[0]].add(word)
-            
-        
-        @functools.lru_cache(maxsize=None)
+        @functools.lru_cache(None)
         def recurse(s):
-            global result
-            
-            # Termination condition 1)
-            if result == True:
-                return
-            
-            # Termination condition 2)
-            c = s[0:1]
-            if c == "":
-                result = True
-                return
-            
-            # Termination condition 3)
-            if len(graph[c]) == 0:
-                return
-            
-            # See which words are in here
-            for word in graph[c]:
-                if s[0:len(word)] == word:
-                    recurse(s[len(word):])
+            if s in wordDict: return True
+            return any([
+                recurse(s[:idx]) and recurse(s[idx:]) 
+                for idx in range(len(s))
+            ])
                 
-                
-        recurse(s)
-                
-        return result
+        return recurse(s)
+            
         
-    
 """
+Really, its about choose a place to break the word...
 
-- start at character
-- recursively read possibilities from a trie?
-
-- needs to be recursive
-- mark global variable as success
-- return global variable
-
-
-helloworld
-[hello, helloworld]
+say you have ["leet", "code", "leetcode"]
 """
