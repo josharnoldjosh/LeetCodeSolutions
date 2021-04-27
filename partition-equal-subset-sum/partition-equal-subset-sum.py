@@ -1,16 +1,9 @@
 class Solution:
-    def canPartition(self, nums: List[int]) -> bool:        
-        return 0 in functools.reduce(lambda dp, num: {num - i for i in dp} | {num + i for i in dp}, nums, {0})
+    def canPartition(self, nums: List[int]) -> bool:
         
-#         dp = {0}
-#         for num in nums:
-#             dp = {num - i for i in dp} | {num + i for i in dp}        
-#         return 0 in dp
-    
-    
-"""
         dp = {0}
-        for num in nums:
-            dp = {num - i for i in dp} | {num + i for i in dp}        
-        return 0 in dp
-"""
+        
+        for i in nums:
+            dp = {i+j for j in dp} | {abs(i-j) for j in dp}
+            
+        return not min(dp)
