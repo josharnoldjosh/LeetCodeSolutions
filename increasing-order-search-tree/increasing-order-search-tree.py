@@ -1,16 +1,33 @@
 class Solution:
-    def increasingBST(self, root: TreeNode) -> TreeNode:
-                        
-        global result
-        result = dummy = TreeNode(0)
+    def increasingBST(self, root: TreeNode) -> TreeNode:           
+        
+        def inorder(node):
+            if node:
+                yield from inorder(node.left)
+                yield node.val
+                yield from inorder(node.right)
+                
+        ans = cur = TreeNode(None)
+        
+        for i in inorder(root):
+            cur.right = TreeNode(i)
+            cur = cur.right
             
-        def recurse(node):
-            global result
-            if not node: return
-            recurse(node.left)
-            result.right = TreeNode(node.val)
-            result = result.right
-            recurse(node.right)
-                     
-        recurse(root)        
-        return dummy.right
+        return ans.right
+                
+        
+        
+    
+    
+"""
+1.
+left
+current
+right
+
+2. 
+    2
+1       3
+"""
+        
+            
