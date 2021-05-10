@@ -1,3 +1,4 @@
+[Discussion Post (created on 10/4/2021 at 7:37)](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/discuss/1201248/It's-python)  
 <h2>462. Minimum Moves to Equal Array Elements II</h2><h3>Medium</h3><hr><div><p>Given an integer array <code>nums</code> of size <code>n</code>, return <em>the minimum number of moves required to make all array elements equal</em>.</p>
 
 <p>In one move, you can increment or decrement an element of the array by <code>1</code>.</p>
