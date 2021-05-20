@@ -1,3 +1,4 @@
+[Discussion Post (created on 20/4/2021 at 11:30)](https://leetcode.com/problems/validate-stack-sequences/discuss/1220344/Python-Solution)  
 <h2>946. Validate Stack Sequences</h2><h3>Medium</h3><hr><div><p>Given two sequences <code>pushed</code> and <code>popped</code>&nbsp;<strong>with distinct values</strong>,&nbsp;return <code>true</code> if and only if this could have been the result of a sequence of push and pop operations on an initially empty stack.</p>
 
 <p>&nbsp;</p>
