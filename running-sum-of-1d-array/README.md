@@ -1,3 +1,4 @@
+[Discussion Post (created on 23/4/2021 at 12:30)](https://leetcode.com/problems/running-sum-of-1d-array/discuss/1226170/Three-Python-Solutions)  
 <h2>1480. Running Sum of 1d Array</h2><h3>Easy</h3><hr><div><p>Given an array <code>nums</code>. We define a running sum of an array as&nbsp;<code>runningSum[i] = sum(nums[0]…nums[i])</code>.</p>
 
 <p>Return the running sum of <code>nums</code>.</p>
