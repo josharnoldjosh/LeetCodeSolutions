@@ -1,23 +1,29 @@
 class Solution:
-    def minSideJumps(self, obstacles: List[int]) -> int:
-        
-        dp = [1, 0, 1]
-        
-        for rock in obstacles:
-            if rock:
-                dp[rock - 1] = float('inf')
-            for i in range(3):
-                if rock != i+1:
-                    dp[i] = min(
-                        dp[i],
-                        dp[(i+1) % 3] + 1,
-                        dp[(i+2) % 3] + 1
-                    )
-                    
+    def minSideJumps(self, obs: List[int]) -> int:
+        dp = [1000000, 1, 0, 1]
+        for i in obs:
+            dp[i] = dp[0]
+            for j in range(1, 4):
+                dp[j] = min(dp[1] + (1 if j != 1 else 0),
+                           dp[2] + (1 if j != 2 else 0),
+                           dp[3] + (1 if j != 3 else 0)) if j != i else dp[j]
         return min(dp)
-                
-            
 """
+
+class Solution:
+    def minSideJumps(self, obs: List[int]) -> int:
+        dp = [1000000, 1, 0, 1]
+        for i in obs:
+            dp[i] = dp[0]
+            for j in range(1, 4):
+                dp[j] = min(dp[1] + (1 if j != 1 else 0),
+                           dp[2] + (1 if j != 2 else 0),
+                           dp[3] + (1 if j != 3 else 0)) if j != i else dp[j]
+        return min(dp)
+
+
+dp[i] = dp
+
     def minSideJumps(self, A):
         dp = [1, 0, 1]
         for a in A:
