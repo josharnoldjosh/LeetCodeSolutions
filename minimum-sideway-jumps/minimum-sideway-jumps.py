@@ -1,40 +1,30 @@
 class Solution:
-    def minSideJumps(self, obs: List[int]) -> int:
-        dp = [1000000, 1, 0, 1]
-        for i in obs:
-            dp[i] = dp[0]
+    def minSideJumps(self, A: List[int]) -> int:
+        
+        # 1 - overall init
+        dp = [
+            [float('inf')] * 4      # "lane" parameter
+            for _ in range(len(A))  # "idx" parameter
+        ]
+        
+        # 2 - first item init
+        dp[0] = [float('inf'), 1, 0, 1]
+        
+        # 3 - loop
+        for i in range(1, len(A)):  # loops usually start at 1, not 0                                    
+            
+            # 4                        
+            for j in range(1, 4):                
+                dp[i][j] = dp[i-1][j] if A[i] != j else float('inf')
             for j in range(1, 4):
-                dp[j] = min(dp[1] + (1 if j != 1 else 0),
-                           dp[2] + (1 if j != 2 else 0),
-                           dp[3] + (1 if j != 3 else 0)) if j != i else dp[j]
-        return min(dp)
-"""
-
-class Solution:
-    def minSideJumps(self, obs: List[int]) -> int:
-        dp = [1000000, 1, 0, 1]
-        for i in obs:
-            dp[i] = dp[0]
-            for j in range(1, 4):
-                dp[j] = min(dp[1] + (1 if j != 1 else 0),
-                           dp[2] + (1 if j != 2 else 0),
-                           dp[3] + (1 if j != 3 else 0)) if j != i else dp[j]
-        return min(dp)
-
-
-dp[i] = dp
-
-    def minSideJumps(self, A):
-        dp = [1, 0, 1]
-        for a in A:
-            if a:
-                dp[a - 1] = float('inf')
-            for i in xrange(3):
-                if a != i + 1:
-                    dp[i] = min(dp[i], dp[(i + 1) % 3] + 1, dp[(i + 2) % 3] + 1)
-        return min(dp)
-"""        
-    
+                if j == A[i]: continue
+                dp[i][j] = min(
+                    min(dp[i])+1,
+                    dp[i][j]
+                )                         
+        
+        # 5
+        return min(dp[-1])
     
 """
 Top down idea:
