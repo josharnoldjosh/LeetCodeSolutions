@@ -1,30 +1,55 @@
 class Solution:
     def minSideJumps(self, A: List[int]) -> int:
         
-        # 1 - overall init
+        # 1
+        N = len(A) - 1        
         dp = [
-            [float('inf')] * 4      # "lane" parameter
-            for _ in range(len(A))  # "idx" parameter
+            [float('inf')] * 3
+            for _ in range(N)
         ]
         
-        # 2 - first item init
-        dp[0] = [float('inf'), 1, 0, 1]
+        # 2
+        dp[0] = [1, 0, 1]
         
-        # 3 - loop
-        for i in range(1, len(A)):  # loops usually start at 1, not 0                                    
-            
-            # 4                        
-            for j in range(1, 4):                
-                dp[i][j] = dp[i-1][j] if A[i] != j else float('inf')
-            for j in range(1, 4):
-                if j == A[i]: continue
-                dp[i][j] = min(
-                    min(dp[i])+1,
-                    dp[i][j]
-                )                         
-        
+        # 3
+        for i in range(1, N):
+            for j in range(3):
+                
+                # 4
+                if j+1 in {A[i], A[i+1]}:
+                    dp[i][j] = float('inf')
+                else:
+                    dp[i][j] = min(
+                        dp[i-1][0] + (1 if j != 0 else 0),
+                        dp[i-1][1] + (1 if j != 1 else 0),
+                        dp[i-1][2] + (1 if j != 2 else 0),
+                    )
+                    
         # 5
         return min(dp[-1])
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 """
 Top down idea:
@@ -46,6 +71,36 @@ class Solution:
             ])
         
         return recurse(0, 2)
+```
+
+Bottom up!
+```python
+class Solution:
+    def minSideJumps(self, A: List[int]) -> int:
+                        
+        N = len(A) - 1
+            
+        dp = [
+            [float('inf')] * 3
+            for _ in range(N)
+        ]
+        
+        dp[0] = [1, 0, 1]
+        
+        for i in range(1, N):
+            for j in range(3):
+            
+                # This line here is the tricky one                
+                if A[i] == j+1 or A[i+1] == j+1:
+                    dp[i][j] = float('inf')
+                else:
+                    dp[i][j] = min([
+                        dp[i-1][0] + (1 if j != 0 else 0),
+                        dp[i-1][1] + (1 if j != 1 else 0),
+                        dp[i-1][2] + (1 if j != 2 else 0),
+                    ])
+                    
+        return min(dp[-1])
 ```
 """
         
