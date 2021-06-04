@@ -1,3 +1,4 @@
+[Discussion Post (created on 4/5/2021 at 9:18)](https://leetcode.com/problems/longest-harmonious-subsequence/discuss/1251307/Python-Counter)  
 <h2>594. Longest Harmonious Subsequence</h2><h3>Easy</h3><hr><div><p>We define a harmonious array as an array where the difference between its maximum value and its minimum value is <b>exactly</b> <code>1</code>.</p>
 
 <p>Given an integer array <code>nums</code>, return <em>the length of its longest harmonious subsequence among all its possible subsequences</em>.</p>
