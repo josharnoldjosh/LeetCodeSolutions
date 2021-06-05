@@ -1,14 +1,12 @@
 class Solution:
-    def minimumAbsDifference(self, arr: List[int]) -> List[List[int]]:
-        
-        arr.sort()
-        
-        data = list(zip(arr, arr[1:]))
-        
+    def minimumAbsDifference(self, A: List[int]) -> List[List[int]]:
+        A.sort()
+
         res = collections.defaultdict(list)
-        for i in data:
-            res[i[1]-i[0]].append(i)
-        
+
+        for a, b in list(zip(A, A[1:])):
+            res[b - a].append((a, b))
+
         return res[min(res.keys())]
                 
         
