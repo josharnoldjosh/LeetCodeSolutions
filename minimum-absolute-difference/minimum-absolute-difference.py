@@ -4,8 +4,10 @@ class Solution:
 
         res = collections.defaultdict(list)
 
-        for a, b in list(zip(A, A[1:])):
-            res[b - a].append((a, b))
+        for a, b in zip(A, A[1:]):
+            if res and b - a > min(res.keys()):
+                continue
+            res[b - a].append((a, b))            
 
         return res[min(res.keys())]
                 
