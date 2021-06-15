@@ -1,3 +1,4 @@
+[Discussion Post (created on 15/5/2021 at 9:42)](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/discuss/1274759/Python-Simple-idea)  
 <h2>1650. Lowest Common Ancestor of a Binary Tree III</h2><h3>Medium</h3><hr><div><p>Given two nodes of a&nbsp;binary tree <code>p</code> and <code>q</code>, return <em>their&nbsp;lowest common ancestor (LCA)</em>.</p>
 
 <p>Each node will have a reference to its parent node. The definition for <code>Node</code> is below:</p>
