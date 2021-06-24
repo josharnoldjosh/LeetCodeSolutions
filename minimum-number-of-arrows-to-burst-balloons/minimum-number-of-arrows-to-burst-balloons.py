@@ -1,17 +1,21 @@
 class Solution:
     def findMinArrowShots(self, points: List[List[int]]) -> int:
         
-        A = collections.deque([range(i, j+1) for i, j in sorted(points)])
-        f = lambda x, y: range(max(x[0], y[0]), min(x[-1], y[-1])+1)
-        result = 1
+        result, end = 0, float('inf')
         
-        while A:
-            i = A.popleft()
+        for i, j in sorted(points, reverse=True):
+            if end > j:
+                result += 1
+                end = i
             
-            while A and i:     
-                i = f(i, A[0])
-                if not i: result += 1
-                else: A.popleft()
-                    
         return result
         
+        
+"""
+      ret, shoot = 0, float('inf')
+        for s, e in sorted(points, reverse=True):
+            if shoot > e:
+                shoot = s
+                ret += 1
+        return ret
+"""
