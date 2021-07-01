@@ -1,3 +1,4 @@
+[Discussion Post (created on 1/6/2021 at 9:5)](https://leetcode.com/problems/flood-fill/discuss/1309426/Python-DFS)  
 <h2>733. Flood Fill</h2><h3>Easy</h3><hr><div><p>An image is represented by an <code>m x n</code> integer grid <code>image</code> where <code>image[i][j]</code> represents the pixel value of the image.</p>
 
 <p>You are also given three integers <code>sr</code>, <code>sc</code>, and <code>newColor</code>. You should perform a <strong>flood fill</strong> on the image starting from the pixel <code>image[sr][sc]</code>.</p>
