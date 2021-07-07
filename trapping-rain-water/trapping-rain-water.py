@@ -1,18 +1,18 @@
 class Solution:
-    
-    def trap(self, height, result = 0):
-    
-        left, right = [], []
-        
-        for idx, (i, j) in enumerate(zip(height, height[::-1])):
-            if idx == 0: left.append(i); right.append(j); continue
-            if i > left[idx-1]: left.append(i)
-            else: left.append(left[idx-1])                
-            if j > right[idx-1]: right.append(j)
-            else: right.append(right[idx-1])
-                
-        for idx, (i, j) in enumerate(zip(left, right[::-1])):
-            result += min(i, j) - height[idx]
-            
-        return result
-        
+    def trap(self, height: List[int]) -> int:
+        
+        stack = []
+        result = 0
+        
+        for idx, i in enumerate(height):            
+            while stack and height[stack[-1]] < i:
+                lower = height[stack.pop()]
+                if not stack: break
+                upper = min(height[stack[-1]], i)
+                h = upper - lower
+                w = idx - stack[-1] - 1
+                result += w * h
+                                        
+            stack.append(idx)
+        
+        return result
