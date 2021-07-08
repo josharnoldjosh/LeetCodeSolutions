@@ -1,0 +1,24 @@
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def findLeaves(self, root: TreeNode) -> List[List[int]]:        
+        
+        result = collections.defaultdict(list)
+        
+        def depth(node):
+            if not node: return 0
+            return 1 + max(depth(node.left), depth(node.right))
+        
+        def dfs(node):
+            if not node: return                        
+            dfs(node.left)            
+            dfs(node.right)
+            result[depth(node)] += [node.val]
+            
+        dfs(root)
+        
+        return result.values()
