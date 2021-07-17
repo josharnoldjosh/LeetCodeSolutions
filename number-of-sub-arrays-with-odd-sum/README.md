@@ -1,3 +1,4 @@
+[Discussion Post (created on 17/6/2021 at 10:32)](https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/discuss/1344123/Python-Easy!)  
 <h2>1524. Number of Sub-arrays With Odd Sum</h2><h3>Medium</h3><hr><div><p>Given an array of integers <code>arr</code>. Return <em>the number of sub-arrays</em> with <strong>odd</strong> sum.</p>
 
 <p>As the answer may grow large, the answer&nbsp;<strong>must be</strong>&nbsp;computed modulo&nbsp;<code>10^9 + 7</code>.</p>
