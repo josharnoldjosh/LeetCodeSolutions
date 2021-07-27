@@ -1,11 +1,12 @@
 class Solution:
     def findLengthOfLCIS(self, nums: List[int]) -> int:
         best = 0
-        replay = [float('inf')]
+        replay = float('inf')
+        score = 0
         for i in nums:
-            if replay[-1] >= i:
-                replay = [i]
-            else:
-                replay.append(i)
-            best = max(best, len(replay))
+            if replay >= i:
+                score = 0
+            replay = i            
+            score += 1
+            best = max(best, score)
         return best
