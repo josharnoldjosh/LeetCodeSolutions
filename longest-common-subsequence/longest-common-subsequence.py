@@ -1,15 +1,23 @@
 class Solution:
-    def longestCommonSubsequence(self, text1: str, text2: str) -> int:
-        
-        @functools.lru_cache(maxsize=None)
-        def recurse(p1, p2):
-            if p1 == len(text1): return 0
-            if p2 == len(text2): return 0
-            score = 0
-            if text1[p1] == text2[p2]:
-                score = max(score, recurse(p1+1, p2+1) + 1)
-            else:
-                score = max(recurse(p1+1, p2), recurse(p1, p2+1))
-            return score
+    def longestCommonSubsequence(self, text1: str, text2: str) -> int:        
+            
+        @lru_cache(maxsize=None)
+        def recurse(idx, jdx):
+            if idx == len(text1) or jdx == len(text2):
+                return 0
+            a, b = recurse(idx+1, jdx), 0
+            occ = text2.find(text1[idx], jdx)
+            if occ != -1:
+                b = 1 + recurse(idx+1, occ+1)
+            return max(a, b)
         
         return recurse(0, 0)
+            
+
+        
+    
+    
+"""
+- what if we found the LCS of size one
+- then from LCS of 1, we use that as a building block for LCS of size 2?
+"""
