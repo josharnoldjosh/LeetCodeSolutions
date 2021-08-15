@@ -1,3 +1,4 @@
+[Discussion Post (created on 15/7/2021 at 13:18)](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/discuss/1405761/Python)  
 <h2>1281. Subtract the Product and Sum of Digits of an Integer</h2><h3>Easy</h3><hr><div>Given an integer number <code>n</code>, return the difference between the product of its digits and the sum of its digits.
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
