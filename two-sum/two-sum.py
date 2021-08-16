@@ -1,11 +1,9 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:        
-        dp = {}        
+        dp = {}
         for idx, i in enumerate(nums):
-            if target-i in dp and dp[target-i] != idx:
-                return [idx, dp[target-i]]
+            if target-i in dp:
+                return [dp[target-i], idx]
             dp[i] = idx
-        return -1
-            
-        
+        raise Exception("Invalid testcase")
                 
