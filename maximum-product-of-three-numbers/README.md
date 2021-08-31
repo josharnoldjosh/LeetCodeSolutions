@@ -1,3 +1,4 @@
+[Discussion Post (created on 31/7/2021 at 10:24)](https://leetcode.com/problems/maximum-product-of-three-numbers/discuss/1437180/Python)  
 <h2>628. Maximum Product of Three Numbers</h2><h3>Easy</h3><hr><div><p>Given an integer array <code>nums</code>, <em>find three numbers whose product is maximum and return the maximum product</em>.</p>
 
 <p>&nbsp;</p>
