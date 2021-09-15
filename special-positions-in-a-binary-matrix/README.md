@@ -1,3 +1,4 @@
+[Discussion Post (created on 15/8/2021 at 8:6)](https://leetcode.com/problems/special-positions-in-a-binary-matrix/discuss/1465223/Python-Transpose)  
 <h2>1582. Special Positions in a Binary Matrix</h2><h3>Easy</h3><hr><div><p>Given a&nbsp;<code>rows x cols</code>&nbsp;matrix&nbsp;<code>mat</code>,&nbsp;where <code>mat[i][j]</code> is either <code>0</code> or <code>1</code>,&nbsp;return <em>the number of special positions in <code>mat</code>.</em></p>
 
 <p>A position <code>(i,j)</code> is called <strong>special</strong>&nbsp;if&nbsp;<code>mat[i][j] == 1</code> and all other elements in row <code>i</code>&nbsp;and column <code>j</code>&nbsp;are <code>0</code> (rows and columns are <strong>0-indexed</strong>).</p>
