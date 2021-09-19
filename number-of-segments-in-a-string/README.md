@@ -1,3 +1,4 @@
+[Discussion Post (created on 19/8/2021 at 7:29)](https://leetcode.com/problems/number-of-segments-in-a-string/discuss/1473062/Python-Stack)  
 <h2>434. Number of Segments in a String</h2><h3>Easy</h3><hr><div><p>You are given a string <code>s</code>, return <em>the number of segments in the string</em>.&nbsp;</p>
 
 <p>A <strong>segment</strong> is defined to be a contiguous sequence of <strong>non-space characters</strong>.</p>
