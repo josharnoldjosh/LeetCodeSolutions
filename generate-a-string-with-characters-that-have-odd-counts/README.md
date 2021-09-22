@@ -1,3 +1,4 @@
+[Discussion Post (created on 22/8/2021 at 7:57)](https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/discuss/1479080/Python-Beast-Mode)  
 <h2>1374. Generate a String With Characters That Have Odd Counts</h2><h3>Easy</h3><hr><div><p>Given an&nbsp;integer <code>n</code>, <em>return a string with <code>n</code>&nbsp;characters such that each character in such string occurs <strong>an odd number of times</strong></em>.</p>
 
 <p>The returned string must contain only lowercase English letters. If there are multiples valid strings, return <strong>any</strong> of them. &nbsp;</p>
