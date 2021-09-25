@@ -1,11 +1,12 @@
 class Solution:
-    def stoneGame(self, piles: List[int]) -> bool:        
-        
-        @functools.lru_cache(None)
-        def recurse(stones):
-            if len(stones) == 0: return 0
-            x = stones[0] - recurse(stones[1:])
-            y = stones[-1] - recurse(stones[:-1])
-            return max(x, y)
-        
-        return True if recurse(tuple(piles)) > 0 else False
+    def stoneGame(self, piles: List[int]) -> bool:        
+        
+        @functools.lru_cache(maxsize=None)
+        def recurse(i, j):
+            if i > j: return 0
+            return max(
+                piles[i] - recurse(i+1, j),
+                piles[j] - recurse(i, j-1),
+            )
+        
+        return True if recurse(0, len(piles)-1) >= 0 else 0
