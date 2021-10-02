@@ -1,3 +1,4 @@
+[Discussion Post (created on 2/9/2021 at 10:22)](https://leetcode.com/problems/check-if-it-is-a-straight-line/discuss/1499322/Python-Slopes)  
 <h2>1232. Check If It Is a Straight Line</h2><h3>Easy</h3><hr><div><p>You are given an array&nbsp;<code>coordinates</code>, <code>coordinates[i] = [x, y]</code>, where <code>[x, y]</code> represents the coordinate of a point. Check if these points&nbsp;make a straight line in the XY plane.</p>
 
 <p>&nbsp;</p>
