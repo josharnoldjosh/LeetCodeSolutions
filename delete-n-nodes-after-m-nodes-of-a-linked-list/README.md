@@ -1,3 +1,4 @@
+[Discussion Post (created on 20/9/2021 at 12:1)](https://leetcode.com/problems/delete-n-nodes-after-m-nodes-of-a-linked-list/discuss/1531993/Python-Easy-to-understand!-4-Steps)  
 <h2>1474. Delete N Nodes After M Nodes of a Linked List</h2><h3>Easy</h3><hr><div><p>Given the <code>head</code> of a linked list and two integers <code>m</code> and <code>n</code>. Traverse the linked list and remove some nodes in the following way:</p>
 
 <ul>
